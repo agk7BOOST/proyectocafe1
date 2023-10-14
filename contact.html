@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <title>Contacto</title>
 </head>
 <body>
     <header>
-        <nav style="display: flex;"> 
+        <nav> 
             <img src="images/web_html_grammer-master/sample_logo_k.png">
-           <ul style="display: flex;"></a>
-            <a href="index.html" rel="prev"><li style="width: 300px;">Inicio</li></a>
-            <a href="#"><li style="width: 300px;">Menu</li></a>
-            <a href="contact.html"><li style="width: 300px;">Pongase en contacto con nosotros</li></a>
+           <ul>
+            <a href="index.html" rel="prev"><li>Inicio</li></a>
+            <a href="#"><li>Menu</li></a>
+            <a href="contact.html"><li>Pongase en contacto con nosotros</li></a>
            </ul>
         </nav>
     </header>
@@ -20,37 +21,28 @@
         <h1>Contacto</h1>
         <article>
             <h2>Contacta con nosotros rellenando los datos</h2>
-            <table border="1">
-                <tbody>
-                    <tr> 
-                        <td>
-                            Nombre
-                        </td>
-                        <td>________</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Contactanos
-                        </td>
-                        <td>________</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Zona de residencia
-                        </td>
-                        <td>________</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Contenido
-                        </td>
-                        <td>________</td>
-                    </tr>
-                </tbody>
-            </table>
+            <form action="#" method="POST">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name">
+                <!-- Añadir type="email". -->
+                <label for="mail">Correo electrónico</label>
+                <input type="email" name="mail" id="mail">
+                <!-- Añade type="contraseña". -->
+                <label for="password">Contraseña</label>
+                <input type="password" name="password" id="password">
+                <button type="submit">Enviar</button>
+              </form>
+        </article>
+        <article>
+            <h1>Contáctanos</h1>
+<form action="#" method="POST">
+  <label for="note">Detalles de la consulta.</label><br>
+  <textarea name="note" id="name" cols="100" rows="5"></textarea><br>
+  <button type="submit">Enviar</button>
+</form>
         </article>
     </section>
-    <footer>
+    <footer> <br>
         <span>&copy; DIVIC Corp. All RIGHTS RESERVED.</span>
     </footer>
 </body>
